@@ -9,20 +9,20 @@
 /* Begin PBXBuildFile section */
 		CA36F0AB2C30713500866AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA36F0AA2C30713500866AE6 /* Assets.xcassets */; };
 		CA36F0AE2C30713500866AE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA36F0AD2C30713500866AE6 /* Preview Assets.xcassets */; };
-		CA36F0B82C30714100866AE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F0B42C30714100866AE6 /* ContentView.swift */; };
 		CA36F0B92C30714100866AE6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F0B52C30714100866AE6 /* Card.swift */; };
-		CA36F0BA2C30714100866AE6 /* My_CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F0B62C30714100866AE6 /* My_CardsApp.swift */; };
 		CA36F0BB2C30714100866AE6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F0B72C30714100866AE6 /* CameraView.swift */; };
+		CA36F0BF2C309EEA00866AE6 /* My_CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F0BE2C309EEA00866AE6 /* My_CardsApp.swift */; };
+		CA36F0C12C309EF500866AE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F0C02C309EF500866AE6 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA36F0A12C30713300866AE6 /* My Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA36F0AA2C30713500866AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA36F0AD2C30713500866AE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CA36F0B42C30714100866AE6 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "../../../Library/Autosave Information/My Cards/My Cards/ContentView.swift"; sourceTree = "<group>"; };
 		CA36F0B52C30714100866AE6 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		CA36F0B62C30714100866AE6 /* My_CardsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = My_CardsApp.swift; path = "../../../Library/Autosave Information/My Cards/My Cards/My_CardsApp.swift"; sourceTree = "<group>"; };
 		CA36F0B72C30714100866AE6 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		CA36F0BE2C309EEA00866AE6 /* My_CardsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = My_CardsApp.swift; sourceTree = "<group>"; };
+		CA36F0C02C309EF500866AE6 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 			children = (
 				CA36F0B72C30714100866AE6 /* CameraView.swift */,
 				CA36F0B52C30714100866AE6 /* Card.swift */,
-				CA36F0B42C30714100866AE6 /* ContentView.swift */,
-				CA36F0B62C30714100866AE6 /* My_CardsApp.swift */,
+				CA36F0C02C309EF500866AE6 /* ContentView.swift */,
+				CA36F0BE2C309EEA00866AE6 /* My_CardsApp.swift */,
 				CA36F0AA2C30713500866AE6 /* Assets.xcassets */,
 				CA36F0AC2C30713500866AE6 /* Preview Content */,
 			);
@@ -143,10 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA36F0BF2C309EEA00866AE6 /* My_CardsApp.swift in Sources */,
+				CA36F0C12C309EF500866AE6 /* ContentView.swift in Sources */,
 				CA36F0BB2C30714100866AE6 /* CameraView.swift in Sources */,
-				CA36F0BA2C30714100866AE6 /* My_CardsApp.swift in Sources */,
 				CA36F0B92C30714100866AE6 /* Card.swift in Sources */,
-				CA36F0B82C30714100866AE6 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
