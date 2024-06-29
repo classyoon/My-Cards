@@ -93,7 +93,7 @@ struct CardPicView :View {
             if let data = card.imageData, let uiImage = UIImage(data: data){
                 Image(uiImage: uiImage)
                     .resizable()
-                    .scaledToFill()
+                    .scaledToFit()
                     .frame(maxWidth: .infinity)
                     .frame(height: height)
                     .clipShape(RoundedRectangle(cornerRadius: 10.0))
