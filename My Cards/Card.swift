@@ -99,11 +99,14 @@ struct CardPicView :View {
                     .clipShape(RoundedRectangle(cornerRadius: 10.0))
             }
             else {
-                ZStack{
-                    Image(systemName: "creditcard").resizable()
+              
+                    //Image(systemName: "creditcard").resizable()
+                Image(.image1)
+                    .resizable()
+                    .opacity(0.4)
+                    .scaledToFit()
                         .frame(maxWidth: .infinity)
                         .frame(height: height)
-                }
             }
         
     }
