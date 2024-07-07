@@ -13,6 +13,7 @@
 		CA36F0BB2C30714100866AE6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F0B72C30714100866AE6 /* CameraView.swift */; };
 		CA36F0BF2C309EEA00866AE6 /* My_CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F0BE2C309EEA00866AE6 /* My_CardsApp.swift */; };
 		CA36F0C12C309EF500866AE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F0C02C309EF500866AE6 /* ContentView.swift */; };
+		CAB105652C3B2342006CBD26 /* OCR.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB105642C3B2342006CBD26 /* OCR.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		CA36F0B72C30714100866AE6 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		CA36F0BE2C309EEA00866AE6 /* My_CardsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = My_CardsApp.swift; sourceTree = "<group>"; };
 		CA36F0C02C309EF500866AE6 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CAB105642C3B2342006CBD26 /* OCR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCR.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				CA36F0B72C30714100866AE6 /* CameraView.swift */,
+				CAB105642C3B2342006CBD26 /* OCR.swift */,
 				CA36F0B52C30714100866AE6 /* Card.swift */,
 				CA36F0C02C309EF500866AE6 /* ContentView.swift */,
 				CA36F0BE2C309EEA00866AE6 /* My_CardsApp.swift */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB105652C3B2342006CBD26 /* OCR.swift in Sources */,
 				CA36F0BF2C309EEA00866AE6 /* My_CardsApp.swift in Sources */,
 				CA36F0C12C309EF500866AE6 /* ContentView.swift in Sources */,
 				CA36F0BB2C30714100866AE6 /* CameraView.swift in Sources */,
@@ -287,8 +291,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,8 +325,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

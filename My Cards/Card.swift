@@ -14,10 +14,12 @@ import SwiftUI
 final class Card {
     var timestamp: Date
     var name : String
+    var text : String = "Nothing Read"
     @Attribute (.externalStorage) var imageData : Data?
-    init(timestamp: Date = Date(), name : String = "Untitled", imageData: Data? = nil) {
+    init(timestamp: Date = Date(), name : String = "Untitled", imageData: Data? = nil, text : String = "Failed to initialize logging system. Log messages may be missing. If this issue persists, try setting IDEPreferLogStreaming=YES in the active scheme actions environment variables.") {
         self.timestamp = timestamp
         self.name = name
+        self.text = text
     }
 }
 
@@ -39,6 +41,7 @@ struct CardEditView: View {
 //                    isTitleFieldFocused = true
 //                }
             CardPicView(card: card, height: 200)
+            TextEditor(text: $card.text)
             HStack{
                 Button {
                     sourceType = .camera
@@ -52,6 +55,18 @@ struct CardEditView: View {
                     Image(systemName: "photo.stack.fill").resizable().frame(width: 50, height: 50)
                 }.buttonStyle(PlainButtonStyle())
                     .frame(maxWidth: .infinity)
+                Button(action: {
+                    guard let data = card.imageData, let uiImage = UIImage(data: data) else {
+                        return
+                    }
+                    ocrText(uiImage: uiImage) { text in
+                        DispatchQueue.main.async {
+                            card.text = text
+                        }
+                    }
+                }, label: {
+                    Text("Read text")
+                })
                 
             }
             
@@ -107,6 +122,7 @@ struct CardPicView :View {
                     .scaledToFill()
                         .frame(maxWidth: .infinity)
                         .frame(height: height)
+                        .clipShape(RoundedRectangle(cornerRadius: 10.0))
             }
         
     }
@@ -117,6 +133,7 @@ struct CardRowView : View {
         VStack{
             Text(card.name).font(.title)
             CardPicView(card: card, height: 200)
+            Text(card.text)
         }
     }
 }
